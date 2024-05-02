@@ -39,13 +39,12 @@ body{
 }
 
 .nav{
-    display: none;
     position: absolute;
     top:0;
     left:0;
     background-color: var(--MOBILE-NAV-BGCOLOR);
-    width: 75%;
     height: 100%;
+    width: auto;
 }
 
 .nav__list{
