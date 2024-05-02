@@ -137,7 +137,7 @@ body{
     display: flex;
     flex-flow: column nowrap;
     gap: min(4vh, 2rem);
-    font-size: min(4vh,1.2rem);
+    font-size: 1.2rem;
 }
 
 .landing-page__img{
