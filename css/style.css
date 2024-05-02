@@ -14,6 +14,7 @@
     --WHITE-COLOR:#fff;
     --NAV-FONT-COLOR:#d0cfcf;
     --BTN-COLOR:#0000ff;
+    --PROJECTS-BGCOLOR: #d0cfcf;
 }
 
 /* ||UTILITIES */
@@ -159,3 +160,48 @@ body{
     color: var(--WHITE-COLOR);
     width: min(60%,150px);
 }
+
+/* ||Projects Section */
+.past-projects{
+    display: grid;
+    grid-template-rows: 30px 2fr 2fr;
+    background-color: var(--PROJECTS-BGCOLOR);
+    gap:2rem;
+    padding: 0.5rem 0;
+}
+
+.past-projects__h2{
+    font-weight: bold;
+    font-size: min(6vh,2rem);
+    justify-self: center;
+}
+
+.project{
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--WHITE-COLOR);
+    border-radius: 3px;
+}
+.project__content{
+    display: flex;
+    flex-flow: column nowrap;
+    gap:0.5rem;
+    padding: 0.7rem;
+}
+
+.project__description{
+    text-align: justify;
+}
+
+.project__link{
+    display: inline-block;
+    border-bottom: 2px solid var(--BTN-COLOR);
+    margin-left: 0.7rem;
+    transition: all 0.5s;
+}
+
+.project__link:is(:hover,:focus){
+    transform: scale(1.2);
+    color: var(--BTN-COLOR);
+}
+
