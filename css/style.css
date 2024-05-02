@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+/* ||RESET: Done by Tailwind */
+
+/* ||VARIABLES */
+:root{
+    /* FONTS */
+    --FF: "Space Grotesk", sans-serif;
+ 
+    /* COLORS */
+    --MAIN-BGCOLOR: #dfdfdf;
+    --MOBILE-NAV-BGCOLOR: #565254;
+    --BLACK-COLOR:#000;
+    --WHITE-COLOR:#fff;
+    --NAV-FONT-COLOR:#d0cfcf;
+}
+
+/* ||GENERAL STYLES */
+html{
+    font-family: var(--FF);
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+}
+
+/* ||HEADER */
+.header{
+    background-color: var(--MAIN-BGCOLOR);
+}
+
+.hamburger-menu{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav{
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: var(--MOBILE-NAV-BGCOLOR);
+    width: 75%;
+    height: 100%;
+}
+
+.nav__list{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 80px 2.5rem;
+    font-size: min(4vh,2rem);
+    font-weight: bold;
+    gap: 1rem;
+    color: var(--NAV-FONT-COLOR);
+}
+
+.nav__item{
+    border-bottom: 1px solid var(--WHITE-COLOR);
+    padding-bottom: 0.5rem;
+}
+
+.nav__link:any-link{
+    width: 80%;
+}
+
+.nav__link:is(:hover,:focus){
+    color: var(--WHITE-COLOR);
+}
