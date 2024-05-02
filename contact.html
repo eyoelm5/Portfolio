@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <!-- HEADER -->
-    <header>
+    <header class="header">
 
         <!-- HAMBURGER MENU -->
-        <section>
-            <button><div></div></button>
+        <section class="hamburger-menu">
+            <button id="hamburger-btn"class="cursor-pointer h-8 w-8 text-3xl relative z-10"><div class="absolute h-1 w-8 rounded bg-black transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black after:transition-all after:duration-500 after:content-['']"></div></button>
             <img src="../favicon.png" alt="Logo" width="48" height="48">
         </section>
 
         <!-- NAVIGATION BAR FOR MOBILE -->
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#past-projects">Past Projects</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
+        <nav id="mobile-menu" class="nav hidden" aria-label="mobile">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#past-projects">Past Projects</a></li>
+                <li class="nav__item"><a class="nav__link" href="#about">About Me</a></li>
+                <li class="nav__item"><a class="nav__link" href="contact.html">Contact Me</a></li>
             </ul>
         </nav>
     </header>
