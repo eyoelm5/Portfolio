@@ -239,3 +239,24 @@ body{
 .about__summary{
     margin-bottom: 0.7rem;
 }
+
+/* ||FOOTER */
+.footer{
+    background-color: var(--MAIN-BGCOLOR);
+}
+
+.footer__address{
+    padding: 0.5rem;
+}
+
+.footer__link{
+    border-bottom: 2px solid var(--BTN-COLOR);
+}
+
+.footer__link:hover{
+    color: var(--BTN-COLOR);
+}
+
+.copyright{
+    text-align: center;
+}
