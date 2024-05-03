@@ -209,3 +209,33 @@ body{
     color: var(--BTN-COLOR);
 }
 
+/* ||ABOUT */
+.about{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: var(--WHITE-COLOR);
+}
+
+.about__h2{
+    font-weight: bold;
+    font-size: min(6vh,2rem);
+}
+
+.about__container{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.about__content{
+    display:flex;
+    flex-flow: column nowrap;
+    gap: 0.7rem;
+    text-align: justify;
+}
+
+.about__summary{
+    margin-bottom: 0.7rem;
+}
