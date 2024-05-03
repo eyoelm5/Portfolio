@@ -98,6 +98,7 @@ body{
 .main{
     display: flex;
     flex-flow: column nowrap;
+    min-height: calc(100vh - 80px);
     flex-grow: 1;
 }
 
@@ -254,10 +255,71 @@ body{
     border-bottom: 2px solid var(--BTN-COLOR);
 }
 
-.footer__link:hover{
+.footer__link:is(:hover,:focus){
     color: var(--BTN-COLOR);
 }
 
 .copyright{
     text-align: center;
+}
+
+/* ||CONTACT */
+.main--contact{
+    background-image: radial-gradient(var(--WHITE-COLOR), var(--PROJECTS-BGCOLOR));
+}
+
+.contact{
+    width: 90%;
+    margin: 1rem auto;
+    background-color: var(--WHITE-COLOR);
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    overflow: hidden;
+}
+
+.contact__img{
+    background-image: url(../img/Contact-Background.jpg);
+    background-size: cover;
+    background-position: right;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.contact__h1{
+    font-weight: bold;
+    font-size: min(6vh,2rem);
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.form{
+    padding: min(4vw,1rem);
+}
+
+.form__label{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.form__input{
+    margin-top: 0.3rem;
+    margin-bottom:0.9rem;
+    border-bottom: 2px solid var(--PROJECTS-BGCOLOR);
+    width: 70%;
+}
+
+.form__input--textarea{
+    resize: vertical;
+}
+
+.form__input:is(:hover,:focus){
+    transform: translateX(1rem) scale(1.2);
+}
+
+.btn--form{
+    background-color: var(--BTN-COLOR);
+    color: var(--WHITE-COLOR);
 }
