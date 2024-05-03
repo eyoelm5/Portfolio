@@ -22,12 +22,37 @@
         <!-- NAVIGATION BAR FOR MOBILE -->
         <nav id="mobile-menu" class="nav hidden" aria-label="mobile">
             <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-                <li class="nav__item"><a class="nav__link" href="#past-projects">Past Projects</a></li>
-                <li class="nav__item"><a class="nav__link" href="#about">About Me</a></li>
+                <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="index.html#past-projects">Past Projects</a></li>
+                <li class="nav__item"><a class="nav__link" href="index.html#about">About Me</a></li>
                 <li class="nav__item"><a class="nav__link" href="contact.html">Contact Me</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- MAIN -->
+    <main>
+        <section>
+            <h1>Contact Me</h1>
+
+            <!-- CONTACT FORM -->
+            <form action="">
+                <label for="firstName">First Name: </label>
+                <input type="text" name="firstName" id="firstName" placeholder="Eyoel" required>
+                
+                <label for="lastName">Last Name: </label>
+                <input type="text" name="lastName" id="lastName" placeholder="Moges" required>
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="random@gmail.com" required>
+
+                <label for="phoneNumber">Phone Number: </label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="555 555 5555" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required>
+
+                <label for="projectDescription">Describe your project: </label>
+                <textarea name="projectDescription" id="projectDescription" cols="30" rows="10" requireds></textarea>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
