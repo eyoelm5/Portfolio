@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
-/* ||RESET: Done by Tailwind */
+/* ||RESET: Most of it Done by Tailwind */
+*:focus{
+    outline: none;
+}
 
 /* ||VARIABLES */
 :root{
@@ -168,6 +171,7 @@ body{
     background-color: var(--PROJECTS-BGCOLOR);
     gap:2rem;
     padding: 0.5rem 0;
+    scroll-margin-top: 4.4rem;
 }
 
 .past-projects__h2{
