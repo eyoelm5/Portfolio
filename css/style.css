@@ -195,13 +195,13 @@ body{
     width: min(60%,150px);
 }
 
-/* ||Projects Section */
+/* ||PROJECTS SECTION */
 .past-projects{
     display: grid;
-    grid-template-rows: 30px 2fr 2fr;
+    grid-template-rows: 30px 1fr 1fr;
     background-color: var(--PROJECTS-BGCOLOR);
     gap:2rem;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 2rem 0;
     scroll-margin-top: 4.4rem;
 }
 
@@ -400,5 +400,28 @@ body{
 
     .nav--main{
         display: grid;
+    }
+
+    /* PROJECTS SECTION */
+    .past-projects{
+        grid-template-rows: 40px 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "h2 h2"
+        "p1 p2";
+        min-height: calc(100vh - 64px);
+        scroll-margin-top:4rem;
+    }
+
+    .past-projects__h2{
+        grid-area: h2;
+    }
+
+    .past-projects:nth-child(2){
+        grid-area: p1;
+    }
+
+    .past-projects:last-child{
+        grid-area: p2;
     }
 }
