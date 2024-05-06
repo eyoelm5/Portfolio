@@ -90,7 +90,7 @@ body{
     width: 80%;
 }
 
-.nav__link:is(:hover,:focus){
+.nav__link:is(:hover,:focus,:active){
     color: var(--WHITE-COLOR);
 }
 
@@ -247,8 +247,23 @@ body{
     background-color: var(--MAIN-BGCOLOR);
 }
 
-.footer__address{
+.footer__content{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    max-width: 46rem;
+    margin: auto;
     padding: 0.5rem;
+}
+
+.footer__socials{
+    display: flex;
+    flex-flow: column nowrap;
+    gap:0.5rem;
+}
+
+.footer__h2{
+    font-weight: bold;
 }
 
 .footer__link{
