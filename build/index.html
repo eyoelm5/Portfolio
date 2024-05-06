@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eyoel Moges</title>
     <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tailwind.css">
     <script src="js/main.js" defer></script>
 
 </head>
 <body>
     <!-- HEADER -->
-    <header class="header">
+    <header class="header dark:bg-black dark:text-[#7A7D7D]">
 
         <!-- HAMBURGER MENU -->
         <section class="hamburger-menu">
-            <button id="hamburger-btn"class="cursor-pointer h-8 w-8 text-3xl relative z-10"><div class="absolute h-1 w-8 rounded bg-black transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black after:transition-all after:duration-500 after:content-['']"></div></button>
+            <button id="hamburger-btn"class="cursor-pointer h-8 w-8 text-3xl relative z-10"><div class="absolute h-1 w-8 rounded bg-black dark:bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black dark:before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black dark:after:bg-white after:transition-all after:duration-500 after:content-['']"></div></button>
             <img src="../favicon.png" alt="Logo" width="48" height="48">
         </section>
 
@@ -33,15 +33,15 @@
         <!-- MAIN NAVIGATION BAR -->
         <nav class="nav nav--main">
             <ol class="nav__list nav__list--main">
-                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="#about">About Me</a></li>
-                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="#past-projects">Past Projects</a></li>
+                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main dark:hover:text-white dark:hover:opacity-100" href="#about">About Me</a></li>
+                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main dark:hover:text-white dark:hover:opacity-100" href="#past-projects">Past Projects</a></li>
             </ol>
 
             <img class="nav__img" src="../favicon.png" alt="Logo" width="48" height="48">
 
             <ol class="nav__list nav__list--main">
-                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="#">Home</a></li>
-                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="contact.html">Contact Me</a></li>  
+                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main dark:hover:text-white dark:hover:opacity-100" href="#">Home</a></li>
+                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main dark:hover:text-white dark:hover:opacity-100" href="contact.html">Contact Me</a></li>  
             </ol>
         </nav>
     </header>
@@ -50,8 +50,8 @@
     <main class="main">
 
         <!-- LANDING PAGE -->
-        <article class="landing-page">
-            <section class="landing-page__container">
+        <article class="landing-page dark:after:bg-black">
+            <section class="landing-page__container dark:bg-[#d0cfcf]">
                 <img class="landing-page__img" src="img/Profile.jpg" alt="Profile Picture" height="2480" width="2480">
                 <div class="landing-page__content">
                     <div class="landing-page__text">
@@ -64,9 +64,9 @@
         </article>
 
         <!-- PROJECTS SECTION -->
-        <article id="past-projects" class="past-projects">
-            <h2 class="past-projects__h2">Past Projects</h2>
-            <section class="project">
+        <article id="past-projects" class="past-projects dark:bg-[#414141]">
+            <h2 class="past-projects__h2 dark:text-white">Past Projects</h2>
+            <section class="project dark:bg-white">
                 <img src="img/Little Taco Shop.jpeg" alt="Little Taco Shop Website" width="1343" height="648">
                 <div class="project__content">
                     <p class="project__description"><strong>Description: </strong>The Little Taco Shop (<abbr title="Little Taco Shop">LTS</abbr>) is a website that showcases a newly opened taco shop in the country. In this website, I used HTML and CSS to create its design. The website is responsive and it features a hamburger menu.</p>
@@ -75,7 +75,7 @@
                 </div>
             </section>
 
-            <section class="project">
+            <section class="project dark:bg-white">
                 <img src="img/Acme Rockets.jpeg" alt="Acme Rockets" width="1343" height="648">
                 <div class="project__content">
                     <p class="project__description"><strong>Description: </strong>Acme Rockets is a website built for a company that sells rockets. In this website, I used HTML, tailwind, and a little bit of JavaScript. Similar to <abbr title="Little Taco Shop">LTS</abbr>, Acme Rocket's website is responsive. However, unlike <abbr title="Little Taco Shop">LTS</abbr>, it contains several animations.</p>
@@ -86,7 +86,7 @@
         </article>
 
         <!-- ABOUT ME -->
-        <article id="about" class="about">
+        <article id="about" class="about dark:bg-[#f0f0f0]">
             <h2 class="about__h2">About Me</h2>
             <aside class="about__container">
                 <section class="about__content">
@@ -108,7 +108,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer dark:bg-black dark:text-[#c4c4c4]">
         <section class="footer__container">
             <section class="footer__content">
 
@@ -127,10 +127,10 @@
                 <section>
                     <h2 class="footer__h2">Socials</h2>
                     <ol class="footer__socials">
-                        <li><a class="footer__link" href="">Instagram</a></li>
-                        <li><a class="footer__link" href="">Telegram</a></li>                        
-                        <li><a class="footer__link" href="">LinkedIn</a></li>
-                        <li><a class="footer__link" href="">Git Hub</a></li>
+                        <li><a class="footer__link" href="https://www.instagram.com/eyoelm5?igsh=MWVxZzg5aThveWlpOA==">Instagram</a></li>
+                        <li><a class="footer__link" href="https://t.me/EyoelM5">Telegram</a></li>                        
+                        <li><a class="footer__link" href="https://www.linkedin.com/in/eyoel-moges?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></li>
+                        <li><a class="footer__link" href="https://github.com/eyoelm5">Git Hub</a></li>
                    </ol>
                 </section>
             </section>

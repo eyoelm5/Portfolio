@@ -11,7 +11,7 @@
     --FF: "Space Grotesk", sans-serif;
  
     /* COLORS */
-    --MAIN-BGCOLOR: #dfdfdf;
+    --MAIN-BGCOLOR: #f0f0f0;
     --MOBILE-NAV-BGCOLOR: #565254;
     --BLACK-COLOR:#000;
     --WHITE-COLOR:#fff;
@@ -202,7 +202,7 @@ body{
     background-color: var(--PROJECTS-BGCOLOR);
     gap:2rem;
     padding: 0.5rem 0 2rem 0;
-    scroll-margin-top: 4.4rem;
+    scroll-margin-top: 4rem;
 }
 
 .past-projects__h2{
@@ -361,10 +361,11 @@ body{
     margin-bottom:0.9rem;
     border-bottom: 2px solid var(--PROJECTS-BGCOLOR);
     width: 200px;
+    margin-right: 2rem;
 }
 
 .form__input:is(:hover,:focus){
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .btn--form{
@@ -434,7 +435,6 @@ body{
         grid-template-areas: 
         "h2 h2"
         "p1 p2";
-        scroll-margin-top:4rem;
     }
 
     .past-projects__h2{
