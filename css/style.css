@@ -54,15 +54,16 @@ body{
     z-index: 3;
 }
 
+/* NAVIGATION BAR FOR MOBILE */
 .hamburger-menu{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
 
-.nav{
+.nav--mobile{
     position: absolute;
     top:0;
     left:0;
@@ -71,7 +72,7 @@ body{
     width: auto;
 }
 
-.nav__list{
+.nav__list--mobile{
     display: flex;
     flex-flow: column nowrap;
     margin: 80px 2.5rem;
@@ -81,17 +82,38 @@ body{
     color: var(--NAV-FONT-COLOR);
 }
 
-.nav__item{
+.nav__item--mobile{
     border-bottom: 1px solid var(--WHITE-COLOR);
     padding-bottom: 0.5rem;
 }
 
-.nav__link:any-link{
+.nav__link--mobile:any-link{
     width: 80%;
 }
 
-.nav__link:is(:hover,:focus,:active){
+.nav__link--mobile:is(:hover,:focus,:active){
     color: var(--WHITE-COLOR);
+}
+
+/* MAIN NAVIGATION BAR */
+.nav--main{
+    display: none;
+    grid-template-columns: 1fr 48px 1fr;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav__list--main{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    gap:1rem;
+    font-size: 1.5rem;
+}
+
+.nav__link--main:is(:hover,:focus,:active){
+    opacity: 0.7;
 }
 
 /* ||MAIN */
@@ -337,4 +359,19 @@ body{
 .btn--form{
     background-color: var(--BTN-COLOR);
     color: var(--WHITE-COLOR);
+}
+
+/* ||LARGE SCREEN */
+@media screen and (min-width: 992px) {
+    .hamburger-menu{
+        display: none;
+    }
+
+    .nav--mobile{
+        display: none;
+    }
+    
+    .nav--main{
+        display: grid;
+    }
 }

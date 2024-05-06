@@ -21,13 +21,28 @@
         </section>
 
         <!-- NAVIGATION BAR FOR MOBILE -->
-        <nav id="mobile-menu" class="nav hidden" aria-label="mobile">
-            <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-                <li class="nav__item"><a class="nav__link" href="#past-projects">Past Projects</a></li>
-                <li class="nav__item"><a class="nav__link" href="#about">About Me</a></li>
-                <li class="nav__item"><a class="nav__link" href="contact.html">Contact Me</a></li>
+        <nav id="mobile-menu" class="nav nav--mobile hidden" aria-label="mobile">
+            <ul class="nav__list nav__list--mobile">
+                <li class="nav__item nav__item--mobile"><a class="nav__link nav__link--mobile" href="#">Home</a></li>
+                <li class="nav__item nav__item--mobile"><a class="nav__link nav__link--mobile" href="#past-projects">Past Projects</a></li>
+                <li class="nav__item nav__item--mobile"><a class="nav__link nav__link--mobile" href="#about">About Me</a></li>
+                <li class="nav__item nav__item--mobile"><a class="nav__link nav__link--mobile" href="contact.html">Contact Me</a></li>
             </ul>
+        </nav>
+
+        <!-- MAIN NAVIGATION BAR -->
+        <nav class="nav nav--main">
+            <ol class="nav__list nav__list--main">
+                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="#about">About Me</a></li>
+                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="#past-projects">Past Projects</a></li>
+            </ol>
+
+            <img class="nav__img" src="../favicon.png" alt="Logo" width="48" height="48">
+
+            <ol class="nav__list nav__list--main">
+                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="#">Home</a></li>
+                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="contact.html">Contact Me</a></li>  
+            </ol>
         </nav>
     </header>
     
@@ -117,7 +132,7 @@
                    </ol>
                 </section>
             </section>
-            
+
             <!-- COPYRIGHTS -->
             <div class="copyright">
                 <span class="nowrap">Copyright &copy; 2024</span>
