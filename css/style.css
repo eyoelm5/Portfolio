@@ -134,7 +134,6 @@ body{
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 1rem;
 }
 
 .landing-page::after{
@@ -151,19 +150,21 @@ body{
 .landing-page__container{
     background-color: var(--WHITE-COLOR);
     color: var(--BLACK-COLOR);
-    width:97%;
+    width:min(90%,350px);
     border-radius: 15px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     gap: 1rem;
     padding: 1.2rem;
     z-index: 1;
+    margin: 1rem auto;
 }
 
 .landing-page__content{
     display: flex;
     flex-flow: column nowrap;
-    gap: min(4vh, 2rem);
+    justify-content: space-around;
+    gap: 2rem;
     font-size: 1.2rem;
 }
 
@@ -172,7 +173,14 @@ body{
     border-radius: 50%;
 }
 
+.landing-page__text{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
 .landing-page__h1{
+    text-align: center;
     font-weight: bold;
     font-size: min(6vh,2rem);
 }
@@ -361,8 +369,27 @@ body{
     color: var(--WHITE-COLOR);
 }
 
+
+/* ||MEDIUM SCREEN */
+@media screen and (min-width:768px){
+    /* LANDING PAGE */
+    .landing-page__container{
+        width: min(90%, 900px);
+        flex-flow: row nowrap;
+    }
+
+    .landing-page__img{
+        max-width: 40%;
+    }
+
+    .landing-page__h1{
+        text-align: left;
+    }
+}
+
 /* ||LARGE SCREEN */
 @media screen and (min-width: 992px) {
+    /* HEADER */
     .hamburger-menu{
         display: none;
     }
@@ -370,7 +397,7 @@ body{
     .nav--mobile{
         display: none;
     }
-    
+
     .nav--main{
         display: grid;
     }
