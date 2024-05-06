@@ -28,6 +28,21 @@
                 <li class="nav__item"><a class="nav__link" href="contact.html">Contact Me</a></li>
             </ul>
         </nav>
+
+         <!-- MAIN NAVIGATION BAR -->
+         <nav class="nav nav--main">
+            <ol class="nav__list nav__list--main">
+                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="index.html#about">About Me</a></li>
+                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="index.html#past-projects">Past Projects</a></li>
+            </ol>
+
+            <img class="nav__img" src="../favicon.png" alt="Logo" width="48" height="48">
+
+            <ol class="nav__list nav__list--main">
+                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="index.html">Home</a></li>
+                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="#">Contact Me</a></li>  
+            </ol>
+        </nav>
     </header>
 
     <!-- MAIN -->
@@ -36,33 +51,35 @@
         <section class="contact">
             <div class="contact__img"></div>
             <!-- CONTACT FORM -->
-            <section>
+            <section class="contact__content">
                 <h1 class="contact__h1">Contact Me</h1>
                 <form action="" class="form">
-                    <p class="form__p">
-                        <label class="form__label" for="firstName">First Name: </label>
-                        <input class="form__input" type="text" name="firstName" id="firstName" placeholder="Eyoel" required>
-                    </p>
+                    <fieldset class="form__fieldset">
+                        <p class="form__p">
+                            <label class="form__label" for="firstName">First Name: </label>
+                            <input class="form__input" type="text" name="firstName" id="firstName" placeholder="Eyoel" required>
+                        </p>
 
-                    <p class="form__p">
-                        <label class="form__label" for="lastName">Last Name: </label>
-                        <input class="form__input" type="text" name="lastName" id="lastName" placeholder="Moges" required>
-                    </p>
+                        <p class="form__p">
+                            <label class="form__label" for="lastName">Last Name: </label>
+                            <input class="form__input" type="text" name="lastName" id="lastName" placeholder="Moges" required>
+                        </p>
 
-                    <p class="form__p">
-                        <label class="form__label" for="email">Email: </label>
-                        <input class="form__input" type="email" name="email" id="email" placeholder="random@gmail.com" required>
-                    </p>
+                        <p class="form__p">
+                            <label class="form__label" for="email">Email: </label>
+                            <input class="form__input" type="email" name="email" id="email" placeholder="random@gmail.com" required>
+                        </p>
 
-                    <p class="form__p">
-                        <label class="form__label" for="phoneNumber">Phone Number: </label>
-                        <input class="form__input" type="tel" name="phoneNumber" id="phoneNumber" placeholder="555 555 5555" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required>
-                    </p>
+                        <p class="form__p">
+                            <label class="form__label" for="phoneNumber">Phone Number: </label>
+                            <input class="form__input" type="tel" name="phoneNumber" id="phoneNumber" placeholder="555 555 5555" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required>
+                        </p>
 
-                    <p class="form__p">
-                        <label class="form__label" for="projectDescription">Describe your project: </label>
-                        <textarea class="form__input form__input--textarea" name="projectDescription" id="projectDescription" required></textarea>
-                    </p>
+                        <p class="form__p">
+                            <label class="form__label" for="projectDescription">Describe your project: </label>
+                            <textarea class="form__input form__input--textarea" name="projectDescription" id="projectDescription" placeholder="Type your project here!" required></textarea>
+                        </p>
+                    </fieldset>
                     <button class="btn btn--form">Submit</button>
                 </form>
             </section>
@@ -96,7 +113,7 @@
                    </ol>
                 </section>
             </section>
-            
+
             <!-- COPYRIGHTS -->
             <div class="copyright">
                 <span class="nowrap">Copyright &copy; 2024</span>
