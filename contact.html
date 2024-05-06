@@ -5,50 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tailwind.css">
     <script src="js/main.js" defer></script>
 </head>
 <body>
     <!-- HEADER -->
-    <header class="header">
+    <header class="header dark:bg-black dark:text-[#7A7D7D]">
 
         <!-- HAMBURGER MENU -->
         <section class="hamburger-menu">
-            <button id="hamburger-btn"class="cursor-pointer h-8 w-8 text-3xl relative z-10"><div class="absolute h-1 w-8 rounded bg-black transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black after:transition-all after:duration-500 after:content-['']"></div></button>
+            <button id="hamburger-btn"class="cursor-pointer h-8 w-8 text-3xl relative z-10"><div class="absolute h-1 w-8 rounded bg-black dark:bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black dark:before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black dark:after:bg-white after:transition-all after:duration-500 after:content-['']"></div></button>
             <img src="../favicon.png" alt="Logo" width="48" height="48">
         </section>
 
         <!-- NAVIGATION BAR FOR MOBILE -->
-        <nav id="mobile-menu" class="nav hidden" aria-label="mobile">
-            <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
-                <li class="nav__item"><a class="nav__link" href="index.html#past-projects">Past Projects</a></li>
-                <li class="nav__item"><a class="nav__link" href="index.html#about">About Me</a></li>
-                <li class="nav__item"><a class="nav__link" href="contact.html">Contact Me</a></li>
+        <nav id="mobile-menu" class="nav nav--mobile hidden" aria-label="mobile">
+            <ul class="nav__list nav__list--mobile">
+                <li class="nav__item nav__item--mobile"><a class="nav__link nav__link--mobile" href="index.html">Home</a></li>
+                <li class="nav__item nav__item--mobile"><a class="nav__link nav__link--mobile" href="index.html#past-projects">Past Projects</a></li>
+                <li class="nav__item nav__item--mobile"><a class="nav__link nav__link--mobile" href="index.html#about">About Me</a></li>
+                <li class="nav__item nav__item--mobile"><a class="nav__link nav__link--mobile" href="#">Contact Me</a></li>
             </ul>
         </nav>
 
-         <!-- MAIN NAVIGATION BAR -->
-         <nav class="nav nav--main">
+        <!-- MAIN NAVIGATION BAR -->
+        <nav class="nav nav--main">
             <ol class="nav__list nav__list--main">
-                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="index.html#about">About Me</a></li>
-                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="index.html#past-projects">Past Projects</a></li>
+                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main dark:hover:text-white dark:hover:opacity-100" href="index.html#about">About Me</a></li>
+                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main dark:hover:text-white dark:hover:opacity-100" href="index.html#past-projects">Past Projects</a></li>
             </ol>
 
             <img class="nav__img" src="../favicon.png" alt="Logo" width="48" height="48">
 
             <ol class="nav__list nav__list--main">
-                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="index.html">Home</a></li>
-                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="#">Contact Me</a></li>  
+                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main dark:hover:text-white dark:hover:opacity-100" href="index.html">Home</a></li>
+                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main dark:hover:text-white dark:hover:opacity-100" href="#">Contact Me</a></li>  
             </ol>
         </nav>
     </header>
 
     <!-- MAIN -->
-    <main class="main main--contact">
+    <main class="main main--contact dark:bg-[radial-gradient(#7A7D7D,#000)]">
 
-        <section class="contact">
+        <section class="contact dark:bg-[#d0cfcf]">
             <div class="contact__img"></div>
             <!-- CONTACT FORM -->
             <section class="contact__content">
@@ -57,27 +57,27 @@
                     <fieldset class="form__fieldset">
                         <p class="form__p">
                             <label class="form__label" for="firstName">First Name: </label>
-                            <input class="form__input" type="text" name="firstName" id="firstName" placeholder="Eyoel" required>
+                            <input class="form__input dark:bg-[#d0cfcf] dark:border-b-black" type="text" name="firstName" id="firstName" placeholder="Eyoel" required>
                         </p>
 
                         <p class="form__p">
                             <label class="form__label" for="lastName">Last Name: </label>
-                            <input class="form__input" type="text" name="lastName" id="lastName" placeholder="Moges" required>
+                            <input class="form__input dark:bg-[#d0cfcf] dark:border-b-black" type="text" name="lastName" id="lastName" placeholder="Moges" required>
                         </p>
 
                         <p class="form__p">
                             <label class="form__label" for="email">Email: </label>
-                            <input class="form__input" type="email" name="email" id="email" placeholder="random@gmail.com" required>
+                            <input class="form__input dark:bg-[#d0cfcf] dark:border-b-black" type="email" name="email" id="email" placeholder="random@gmail.com" required>
                         </p>
 
                         <p class="form__p">
                             <label class="form__label" for="phoneNumber">Phone Number: </label>
-                            <input class="form__input" type="tel" name="phoneNumber" id="phoneNumber" placeholder="555 555 5555" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required>
+                            <input class="form__input dark:bg-[#d0cfcf] dark:border-b-black" type="tel" name="phoneNumber" id="phoneNumber" placeholder="555 555 5555" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required>
                         </p>
 
                         <p class="form__p">
                             <label class="form__label" for="projectDescription">Describe your project: </label>
-                            <textarea class="form__input form__input--textarea" name="projectDescription" id="projectDescription" placeholder="Type your project here!" required></textarea>
+                            <textarea class="form__input form__input--textarea dark:bg-[#d0cfcf] dark:border-b-black" name="projectDescription" id="projectDescription" placeholder="Type your project here!" required></textarea>
                         </p>
                     </fieldset>
                     <button class="btn btn--form">Submit</button>
@@ -87,7 +87,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer dark:bg-black dark:text-[#c4c4c4]">
         <section class="footer__container">
             <section class="footer__content">
 
@@ -106,10 +106,10 @@
                 <section>
                     <h2 class="footer__h2">Socials</h2>
                     <ol class="footer__socials">
-                        <li><a class="footer__link" href="">Instagram</a></li>
-                        <li><a class="footer__link" href="">Telegram</a></li>                        
-                        <li><a class="footer__link" href="">LinkedIn</a></li>
-                        <li><a class="footer__link" href="">Git Hub</a></li>
+                        <li><a class="footer__link" href="https://www.instagram.com/eyoelm5?igsh=MWVxZzg5aThveWlpOA==">Instagram</a></li>
+                        <li><a class="footer__link" href="https://t.me/EyoelM5">Telegram</a></li>                        
+                        <li><a class="footer__link" href="https://www.linkedin.com/in/eyoel-moges?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></li>
+                        <li><a class="footer__link" href="https://github.com/eyoelm5">Git Hub</a></li>
                    </ol>
                 </section>
             </section>
