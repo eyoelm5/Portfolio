@@ -1,146 +1,332 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eyoel Moges</title>
-    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/tailwind.css">
-    <script src="js/main.js" defer></script>
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
 
-</head>
-<body>
+    <!-- BOOTSTRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS STYLESHEETS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tailwind.css" />
+
+    <!-- JAVASCRIPT -->
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
     <!-- HEADER -->
     <header class="header dark:bg-black dark:text-[#7A7D7D]">
+      <!-- HAMBURGER MENU -->
+      <section class="hamburger-menu">
+        <button
+          id="hamburger-btn"
+          class="cursor-pointer h-8 w-8 text-3xl relative z-10"
+        >
+          <div
+            class="absolute h-1 w-8 rounded bg-black dark:bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black dark:before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black dark:after:bg-white after:transition-all after:duration-500 after:content-['']"
+          ></div>
+        </button>
+        <img
+          class="animate-spin"
+          src="../favicon.png"
+          alt="Logo"
+          width="48"
+          height="48"
+        />
+      </section>
 
-        <!-- HAMBURGER MENU -->
-        <section class="hamburger-menu">
-            <button id="hamburger-btn"class="cursor-pointer h-8 w-8 text-3xl relative z-10"><div class="absolute h-1 w-8 rounded bg-black dark:bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black dark:before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black dark:after:bg-white after:transition-all after:duration-500 after:content-['']"></div></button>
-            <img src="../favicon.png" alt="Logo" width="48" height="48">
-        </section>
+      <!-- NAVIGATION BAR FOR MOBILE -->
+      <nav
+        id="mobile-menu"
+        class="nav nav--mobile dark:bg-[#414141] hidden"
+        aria-label="mobile"
+      >
+        <ul class="nav__list nav__list--mobile">
+          <li class="nav__item nav__item--mobile">
+            <a class="nav__link nav__link--mobile" href="#">Home</a>
+          </li>
+          <li class="nav__item nav__item--mobile">
+            <a class="nav__link nav__link--mobile" href="#past-projects"
+              >Past Projects</a
+            >
+          </li>
+          <li class="nav__item nav__item--mobile">
+            <a class="nav__link nav__link--mobile" href="#about">About Me</a>
+          </li>
+          <li class="nav__item nav__item--mobile">
+            <a class="nav__link nav__link--mobile" href="contact.html"
+              >Contact Me</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-        <!-- NAVIGATION BAR FOR MOBILE -->
-        <nav id="mobile-menu" class="nav nav--mobile hidden" aria-label="mobile">
-            <ul class="nav__list nav__list--mobile">
-                <li class="nav__item nav__item--mobile"><a class="nav__link nav__link--mobile" href="#">Home</a></li>
-                <li class="nav__item nav__item--mobile"><a class="nav__link nav__link--mobile" href="#past-projects">Past Projects</a></li>
-                <li class="nav__item nav__item--mobile"><a class="nav__link nav__link--mobile" href="#about">About Me</a></li>
-                <li class="nav__item nav__item--mobile"><a class="nav__link nav__link--mobile" href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
+      <!-- MAIN NAVIGATION BAR -->
+      <nav class="nav nav--main">
+        <ol class="nav__list nav__list--main">
+          <li class="nav__item nav__item--main">
+            <a
+              class="nav__link nav__link--main dark:hover:text-white dark:hover:opacity-100"
+              href="#about"
+              >About Me</a
+            >
+          </li>
+          <li class="nav__item nav__item--main">
+            <a
+              class="nav__link nav__link--main dark:hover:text-white dark:hover:opacity-100"
+              href="#past-projects"
+              >Past Projects</a
+            >
+          </li>
+        </ol>
 
-        <!-- MAIN NAVIGATION BAR -->
-        <nav class="nav nav--main">
-            <ol class="nav__list nav__list--main">
-                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main dark:hover:text-white dark:hover:opacity-100" href="#about">About Me</a></li>
-                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main dark:hover:text-white dark:hover:opacity-100" href="#past-projects">Past Projects</a></li>
-            </ol>
+        <img
+          class="nav__img animate-spin"
+          src="../favicon.png"
+          alt="Logo"
+          width="48"
+          height="48"
+        />
 
-            <img class="nav__img" src="../favicon.png" alt="Logo" width="48" height="48">
-
-            <ol class="nav__list nav__list--main">
-                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main dark:hover:text-white dark:hover:opacity-100" href="#">Home</a></li>
-                <li class="nav__item nav__item--main"><a class="nav__link nav__link--main dark:hover:text-white dark:hover:opacity-100" href="contact.html">Contact Me</a></li>  
-            </ol>
-        </nav>
+        <ol class="nav__list nav__list--main">
+          <li class="nav__item nav__item--main">
+            <a
+              class="nav__link nav__link--main dark:hover:text-white dark:hover:opacity-100"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li class="nav__item nav__item--main">
+            <a
+              class="nav__link nav__link--main dark:hover:text-white dark:hover:opacity-100"
+              href="contact.html"
+              >Contact Me</a
+            >
+          </li>
+        </ol>
+      </nav>
     </header>
-    
+
     <!-- MAIN -->
     <main class="main">
+      <!-- LANDING PAGE -->
+      <article class="landing-page dark:after:bg-black">
+        <section class="landing-page__container dark:bg-[#d0cfcf]">
+          <img
+            class="landing-page__img"
+            src="img/Profile.jpg"
+            alt="Profile Picture"
+            height="2480"
+            width="2480"
+          />
+          <div class="landing-page__content">
+            <div class="landing-page__text">
+              <h1 class="landing-page__h1">Hi, I'm Eyoel Moges</h1>
+              <p class="landing-page__p">
+                I'm a <em>front-end developer</em> based in Ethiopia, Addis
+                Ababa. I love working with ambitious people and enjoy getting
+                feedbacks. Hope you will have a great journey with me!<strong
+                  class="block mt-2"
+                  >Excited to work with you!</strong
+                >
+              </p>
+            </div>
+            <button id="btn--landing-page" class="btn btn--landing-page">
+              <span class="nowrap">Work With Me</span>
+            </button>
+          </div>
+        </section>
+      </article>
 
-        <!-- LANDING PAGE -->
-        <article class="landing-page dark:after:bg-black">
-            <section class="landing-page__container dark:bg-[#d0cfcf]">
-                <img class="landing-page__img" src="img/Profile.jpg" alt="Profile Picture" height="2480" width="2480">
-                <div class="landing-page__content">
-                    <div class="landing-page__text">
-                        <h1 class="landing-page__h1">Hi, I'm Eyoel Moges</h1>
-                        <p class="landing-page__p">I'm a <em>front-end developer</em> based in Ethiopia, Addis Ababa. I love working with ambitious people and enjoy getting feedbacks. Hope you will have a great journey with me!<strong class="block mt-2">Excited to work with you!</strong></p>
-                    </div>
-                    <button class="btn btn--landing-page"><span class="nowrap">Work With Me</span></button>
-                </div>
+      <!-- PROJECTS SECTION -->
+      <article id="past-projects" class="past-projects dark:bg-[#414141]">
+        <h2 class="past-projects__h2 dark:text-white">Past Projects</h2>
+        <section class="project dark:bg-[#f0f0f0]">
+          <img
+            src="img/Little Taco Shop.jpeg"
+            alt="Little Taco Shop Website"
+            width="1343"
+            height="648"
+          />
+          <div class="project__content">
+            <p class="project__description">
+              <strong>Description: </strong>The Little Taco Shop (<abbr
+                title="Little Taco Shop"
+                >LTS</abbr
+              >) is a website that showcases a newly opened taco shop in the
+              country. In this website, I used HTML and CSS to create its
+              design. The website is responsive and it features a hamburger
+              menu.
+            </p>
+            <p>
+              <strong>Website Link: </strong
+              ><a
+                class="project__link"
+                href="https://little-taco-shop-6qpu.onrender.com/"
+                >Click Here</a
+              >
+            </p>
+            <p>
+              <strong>Git Hub Repository: </strong
+              ><a
+                class="project__link"
+                href="https://github.com/eyoelm5/CSS-Project"
+                >Click Here</a
+              >
+            </p>
+          </div>
+        </section>
+
+        <section class="project dark:bg-[#f0f0f0]">
+          <img
+            src="img/Acme Rockets.jpeg"
+            alt="Acme Rockets"
+            width="1343"
+            height="648"
+          />
+          <div class="project__content">
+            <p class="project__description">
+              <strong>Description: </strong>Acme Rockets is a website built for
+              a company that sells rockets. In this website, I used HTML,
+              tailwind, and a little bit of JavaScript. Similar to
+              <abbr title="Little Taco Shop">LTS</abbr>, Acme Rocket's website
+              is responsive. However, unlike
+              <abbr title="Little Taco Shop">LTS</abbr>, it contains several
+              animations.
+            </p>
+            <p>
+              <strong>Website Link: </strong
+              ><a
+                class="project__link"
+                href="https://acme-rockets-tailwind-project-h1sp.onrender.com/"
+                >Click Here</a
+              >
+            </p>
+            <p>
+              <strong>Git Hub Repository: </strong
+              ><a
+                class="project__link"
+                href="https://github.com/eyoelm5/Tailwind-Project"
+                >Click Here</a
+              >
+            </p>
+          </div>
+        </section>
+      </article>
+
+      <!-- ABOUT ME -->
+      <article id="about" class="about dark:bg-[#f0f0f0]">
+        <h2 class="about__h2">About Me</h2>
+        <aside class="about__container">
+          <section class="about__content">
+            <p>
+              <strong>Background: </strong>I was born and raised in Addis Ababa,
+              Ethiopia. I have one younger sister.
+            </p>
+            <p>
+              <strong>Education: </strong>I learned from Grade 1-12 in Fountain
+              of Knowledge School. Currently, I am a university student at Addis
+              Ababa University.
+            </p>
+            <p>
+              <strong>Expirences: </strong> Worked in Wegene Foundation teaching
+              students. IT Intern at Hailemariam and Roman Foundation. Lead over
+              8 church groups and clubs.
+            </p>
+          </section>
+
+          <details>
+            <summary class="about__summary">Discover More About Me</summary>
+            <section class="about__content">
+              <p>
+                <strong>Achievements: </strong>Scored top 1% in Ethiopian
+                Secondary School Leaving Examination, Stood 2nd in school Chess
+                Tournament. Public speech finalist.
+              </p>
+              <p>
+                <strong>Skills/Hobbies: </strong>Swimming, Playing Chess,
+                Reading, Playing Guitar.
+              </p>
+              <p>
+                <strong>Why I joined directED?: </strong>The main reason I
+                joined directED is to enhance my coding skills. Besides that,
+                being able to network with like-minded people was another reason
+                I joined directED.
+              </p>
             </section>
-        </article>
-
-        <!-- PROJECTS SECTION -->
-        <article id="past-projects" class="past-projects dark:bg-[#414141]">
-            <h2 class="past-projects__h2 dark:text-white">Past Projects</h2>
-            <section class="project dark:bg-white">
-                <img src="img/Little Taco Shop.jpeg" alt="Little Taco Shop Website" width="1343" height="648">
-                <div class="project__content">
-                    <p class="project__description"><strong>Description: </strong>The Little Taco Shop (<abbr title="Little Taco Shop">LTS</abbr>) is a website that showcases a newly opened taco shop in the country. In this website, I used HTML and CSS to create its design. The website is responsive and it features a hamburger menu.</p>
-                    <p><strong>Website Link: </strong><a class="project__link" href="https://little-taco-shop-6qpu.onrender.com/">Click Here</a></p>
-                    <p><strong>Git Hub Repository: </strong><a class="project__link" href="https://github.com/eyoelm5/CSS-Project">Click Here</a></p>
-                </div>
-            </section>
-
-            <section class="project dark:bg-white">
-                <img src="img/Acme Rockets.jpeg" alt="Acme Rockets" width="1343" height="648">
-                <div class="project__content">
-                    <p class="project__description"><strong>Description: </strong>Acme Rockets is a website built for a company that sells rockets. In this website, I used HTML, tailwind, and a little bit of JavaScript. Similar to <abbr title="Little Taco Shop">LTS</abbr>, Acme Rocket's website is responsive. However, unlike <abbr title="Little Taco Shop">LTS</abbr>, it contains several animations.</p>
-                    <p><strong>Website Link: </strong><a class="project__link" href="https://acme-rockets-tailwind-project-h1sp.onrender.com/">Click Here</a></p>
-                    <p><strong>Git Hub Repository: </strong><a class="project__link" href="https://github.com/eyoelm5/Tailwind-Project">Click Here</a></p>
-                </div>
-            </section>
-        </article>
-
-        <!-- ABOUT ME -->
-        <article id="about" class="about dark:bg-[#f0f0f0]">
-            <h2 class="about__h2">About Me</h2>
-            <aside class="about__container">
-                <section class="about__content">
-                    <p><strong>Background: </strong>I was born and raised in Addis Ababa, Ethiopia. I have one younger sister.</p>
-                    <p><strong>Education: </strong>I learned from Grade 1-12 in Fountain of Knowledge School. Currently, I am a university student at Addis Ababa University.</p>
-                    <p><Strong>Expirences: </Strong> Worked in Wegene Foundation teaching students. IT Intern at Hailemariam and Roman Foundation. Lead over 8 church groups and clubs.</p>
-                </section>
-
-                <details>
-                    <summary class="about__summary">Discover More About Me</summary>                    
-                    <section class="about__content">
-                        <p><strong>Achievements: </strong>Scored top 1% in Ethiopian Secondary School Leaving Examination, Stood 2nd in school Chess Tournament. Public speech finalist.</p>
-                        <p><strong>Skills/Hobbies: </strong>Swimming, Playing Chess, Reading, Playing Guitar.</p>
-                        <p><Strong>Why I joined directED?: </Strong>The main reason I joined directED is to enhance my coding skills. Besides that, being able to network with like-minded people was another reason I joined directED.</p>
-                    </section>
-                </details>
-            </aside>
-        </article>
+          </details>
+        </aside>
+      </article>
     </main>
 
     <!-- FOOTER -->
     <footer class="footer dark:bg-black dark:text-[#c4c4c4]">
-        <section class="footer__container">
-            <section class="footer__content">
+      <section class="footer__container">
+        <section class="footer__content">
+          <!-- ADDRESS -->
+          <address class="footer__address">
+            <h2 class="footer__h2">Address</h2>
+            Fiyel Bet, Summit<br />
+            Lemi-Kura, Addis Ababa<br />
+            Email:
+            <a
+              class="footer__link footer__link--address"
+              href="mailto:eyoelmoges012@gmail.com"
+              >eyoelmoges012@gmail.com</a
+            ><br />
+            Phone:
+            <a
+              class="footer__link footer__link--address"
+              href="tel:+251 955555555"
+              >(+251) 95-555-5555</a
+            >
+          </address>
 
-                <!-- ADDRESS -->
-                <address class="footer__address">
-                    <h2 class="footer__h2">Address</h2>
-                    Fiyel Bet, Summit<br/>
-                    Lemi-Kura, Addis Ababa<br/>
-                    Email:
-                    <a class="footer__link" href="mailto:eyoelmoges012@gmail.com">eyoelmoges012@gmail.com</a
-                    ><br/>
-                    Phone: <a class="footer__link" href="tel:+251 955555555">(+251) 95-555-5555</a>
-                </address>
-
-                <!-- SOCIALS -->
-                <section>
-                    <h2 class="footer__h2">Socials</h2>
-                    <ol class="footer__socials">
-                        <li><a class="footer__link" href="https://www.instagram.com/eyoelm5?igsh=MWVxZzg5aThveWlpOA==">Instagram</a></li>
-                        <li><a class="footer__link" href="https://t.me/EyoelM5">Telegram</a></li>                        
-                        <li><a class="footer__link" href="https://www.linkedin.com/in/eyoel-moges?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></li>
-                        <li><a class="footer__link" href="https://github.com/eyoelm5">Git Hub</a></li>
-                   </ol>
-                </section>
-            </section>
-
-            <!-- COPYRIGHTS -->
-            <div class="copyright">
-                <span class="nowrap">Copyright &copy; 2024</span>
-                <span class="nowrap">All Rights Reserved</span>
-            </div>
+          <!-- SOCIALS -->
+          <section>
+            <h2 class="footer__h2">Socials</h2>
+            <ol class="footer__socials">
+              <li>
+                <a
+                  class="footer__link bi bi-instagram text-3xl"
+                  href="https://www.instagram.com/eyoelm5?igsh=MWVxZzg5aThveWlpOA=="
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer__link bi bi-telegram text-3xl"
+                  href="https://t.me/EyoelM5"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer__link bi bi-linkedin text-3xl"
+                  href="https://www.linkedin.com/in/eyoel-moges?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer__link bi bi-github text-3xl"
+                  href="https://github.com/eyoelm5"
+                ></a>
+              </li>
+            </ol>
+          </section>
         </section>
+
+        <!-- COPYRIGHTS -->
+        <div class="copyright">
+          <span class="nowrap">Copyright &copy; 2024</span>
+          <span class="nowrap">All Rights Reserved</span>
+        </div>
+      </section>
     </footer>
-</body>
+  </body>
 </html>
