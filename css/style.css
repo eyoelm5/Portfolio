@@ -409,7 +409,6 @@ body{
         grid-template-areas: 
         "h2 h2"
         "p1 p2";
-        min-height: calc(100vh - 64px);
         scroll-margin-top:4rem;
     }
 
@@ -423,5 +422,17 @@ body{
 
     .past-projects:last-child{
         grid-area: p2;
+    }
+
+    .about__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .about__h2{
+        text-align: center;
+        padding-bottom: 1rem;
     }
 }
