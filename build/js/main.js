@@ -12,6 +12,7 @@ const initApp = () => {
         mobileMenu.classList.toggle('block')
         hamburgerBtn.classList.toggle('toggle-btn')
     }
+    
     hamburgerBtn.addEventListener('click', toggleMenu)
     mobileMenu.addEventListener('click', toggleMenu)
     workwithme.addEventListener('click', contact)
